@@ -1,0 +1,64 @@
+@import "sass_scripts";
+
+.ideas{
+  padding-top: 47px;
+  padding-bottom: 24px;
+  h3{
+    @include readex_font;
+    color:$main_color;
+    font-size: 42px;
+    line-height: 52px;
+    margin-bottom: 9px;
+  }
+  p{
+    @include readex_font;
+    color:$main_color;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 56px;
+  }
+  .ideas_box{
+    padding-bottom: 73px;
+    .box_img{
+      max-width: 620px;
+      border-radius: 16px;
+      margin-right: 35px;
+    }
+    .box_text{
+      padding-top: 14px;
+      max-width: 600px;
+      text-align: left;
+      p{
+        @include inter_font;
+        color:$main_color;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 28px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  a{
+    text-decoration: none;
+    @include inter_font;
+    color:$main_color;
+    font-size: 24px;
+    line-height: 29px;
+    display: inline-block;
+    &:after{
+      content: "";
+      display: inline-block;
+      background-image: url("../image/ideas_arrow.svg");
+      width: 30px;
+      height: 28px;
+      vertical-align: bottom;
+    }
+    &:hover{
+      font-size: 28px;
+      line-height: 31px;
+      text-decoration: underline;
+    }
+  }
+}

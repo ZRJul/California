@@ -1,0 +1,88 @@
+@import "sass_scripts";
+
+.shop{
+  padding-top: 75px;
+  .shop_text{
+    margin: auto;
+    h3{
+      @include readex_font;
+      color:$main_color;
+      font-size: 42px;
+      line-height: 52px;
+      margin-bottom: 9px;
+    }
+    p{
+      @include readex_font;
+      color:$main_color;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 55px;
+      display: inline-block;
+      max-width: 628px;
+    }
+  }
+  .shop_box{
+    max-width: 639px;
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
+
+    a{
+      @include inter_font;
+      color:$main_color;
+      font-size: 15px;
+      line-height: 19px;
+      text-decoration: none;
+      &:hover{
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+    h4{
+      @include readex_font;
+      color:$main_color;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .box1, .box2{
+      background: #FFFFFF;
+    }
+
+    .box1{
+      .box_text{
+        text-align: right;
+        margin-right: 42px;
+      }
+      img{
+        padding-left: 42px;
+      }
+      &:first-of-type{
+        min-height: 472px;
+        margin-bottom: 72px;
+
+      }
+      &:last-of-type{
+        min-height: 270px;
+      }
+    }
+
+    .box2{
+      max-width: 312px;
+      margin-bottom: 22px;
+      &:first-of-type{
+        margin-right: 16px;
+        img{
+          margin: 144px 0 41px 16px;
+        }
+        .box_text{
+          margin-bottom: 144px;
+        }
+      }
+      &:last-of-type{
+        .box_text{
+          margin-top: 114px;
+          margin-bottom: 42px;
+        }
+      }
+    }
+  }
+}
