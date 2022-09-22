@@ -21,3 +21,19 @@ $main_color: #000000;
   }
 }
 
+@mixin screen($min, $max)
+{
+  @media screen and (min-width: $min) and (max-width: $max)
+  {
+    @content;
+  }
+}
+
+@mixin min-screen($min)
+{
+  @media screen and (min-width: $min)
+  {
+    @content;
+  }
+}
+

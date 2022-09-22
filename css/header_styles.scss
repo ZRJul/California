@@ -20,10 +20,9 @@ header{
   .container{
     padding-top: 28px;
     padding-bottom: 28px;
-    @include max-screen(767px){
+    @include max-screen(767px) {
       padding: 20px 14px;
     }
-
   }
 
   .header_body{
@@ -135,6 +134,11 @@ header{
         &:hover{
           font-weight: 600;
         }
+        @include max-screen(767px){
+          font-size: 20px;
+          line-height: 23px;
+          font-weight: 600;
+        }
       }
     }
 
@@ -167,10 +171,12 @@ header{
 
   .header_burger.active{
     &:before{
+      content:"";
       transform: rotate(45deg);
       top: 9px;
     }
     &:after{
+      content:"";
       transform: rotate(-45deg);
       bottom: 9px;
     }
@@ -189,8 +195,9 @@ header{
   }
 }
 
-@include max-screen(767px){
-  body.lock{
+@include max-screen(767px) {
+  body.lock {
     overflow: hidden;
   }
 }
+

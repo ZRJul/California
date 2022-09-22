@@ -25,7 +25,7 @@
             <nav class="header_menu">
                 <ul class="header_list">
                     <li>
-                        <a href="#" class="header_link">all products</a>
+                        <a href="#product" class="header_link">all products</a>
                     </li>
                     <li>
                         <a href="#" class="header_link">Solutions</a>
@@ -41,7 +41,7 @@
             <nav>
                 <ul class="header_icons">
                     <li>
-                        <a href="#">
+                        <a href="#search_else">
                             <img src="image/header_search.svg" alt="search">
                         </a>
                     </li>
@@ -56,53 +56,69 @@
     </div>
 </header>
 
-<section class="banner owl-carousel">
+<section class="banner">
     <div class="container">
-        <div class="banner_text">
-            <h1>The new phones are here take a look.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
-                Faucibus morbi turpis.</p>
-            <a href="#">Explore</a>
+        <div class="owl-carousel">
+            <div class="banner_box d-flex">
+                <div class="banner_text">
+                    <h1>The new phones are here take a look.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="banner_img">
+                    <img src="image/banner.png" alt="banner">
+                </div>
+            </div>
+            <div class="banner_box d-flex">
+                <div class="banner_text">
+                    <h1>The new phones are here take a look.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="banner_img">
+                    <img src="image/banner.png" alt="banner">
+                </div>
+            </div>
+            <div class="banner_box d-flex">
+                <div class="banner_text">
+                    <h1>The new phones are here take a look.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="banner_img">
+                    <img src="image/banner.png" alt="banner">
+                </div>
+            </div>
         </div>
-        <img src="image/banner.png" alt="banner">
-    </div>
-    <div class="container">
-        <div class="banner_text">
-            <h1>The new phones are here take a look.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
-                Faucibus morbi turpis.</p>
-            <a href="#">Explore</a>
-        </div>
-        <img src="image/banner.png" alt="banner">
-    </div>
-    <div class="container">
-        <div class="banner_text">
-            <h1>The new phones are here take a look.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
-                Faucibus morbi turpis.</p>
-            <a href="#">Explore</a>
-        </div>
-        <img src="image/banner.png" alt="banner">
     </div>
 </section>
 
-<section class="shop">
-    <div class="shop_text text_centre">
-        <h3>Shop our latest offers and categories</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
-            morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<section id="product" class="shop">
+    <div class="container">
+        <div class="shop_text text_centre">
+            <h3>Shop our latest offers and categories</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
+                morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
     </div>
     <div class="container d-flex between">
         <div class="shop_box">
             <div class="box1">
-                <img src="image/shop_laptop.png" alt="laptop">
+                <div class="laptop_img">
+                    <img src="image/shop_laptop.png" alt="laptop">
+                </div>
                 <div class="box_text">
                     <a href="#">Laptops</a>
                     <h4>True Laptop<br> Solution</h4>
                 </div>
             </div>
-            <div class="box1 d-flex aline_centre">
-                <img src="image/shop_watch.png" alt="watch">
+            <div class="box1 d-flex">
+                <div class="watch_img">
+                    <img src="image/shop_watch.png" alt="watch">
+                </div>
                 <div class="box_text">
                     <a href="#">Watch</a>
                     <h4>Not just stylisht</h4>
@@ -111,7 +127,9 @@
         </div>
         <div class="shop_box d-flex">
             <div class="box2">
-                <img src="image/shop_phons.png" alt="watch">
+                <div class="phones_img">
+                    <img src="image/shop_phons.png" alt="watch">
+                </div>
                 <div class="box_text text_centre">
                     <a href="#">Phones</a>
                     <h4>Your day to day<br> life</h4>
@@ -122,9 +140,10 @@
                     <a href="#">Tablet</a>
                     <h4>Empower your<br> work</h4>
                 </div>
-                <img src="image/shop_tablet.png" alt="watch">
+                <div class="tablet_img">
+                    <img src="image/shop_tablet.png" alt="watch">
+                </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -136,30 +155,34 @@
             <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
         </div>
         <div class="items_box d-flex between">
-            <article>
-                <img src="image/items1.jpg" alt="img">
-                <h3>MacBook Pro 13</h3>
-                <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet</p>
-                <h4>$ 1,200.00 USD</h4>
-            </article>
-            <article>
-                <img src="image/items2.jpg" alt="img">
-                <h3>Smart Galaxy Watch 3</h3>
-                <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                <h4>$ 199.00 USD</h4>
-            </article>
-            <article>
-                <img src="image/items3.jpg" alt="img">
-                <h3>MacBook Air M1</h3>
-                <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                <h4>$ 1,009.00 USD</h4>
-            </article>
-            <article>
-                <img src="image/items4.jpg" alt="img">
-                <h3>iPad</h3>
-                <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                <h4>$ 610.00 USD</h4>
-            </article>
+            <div class="box d-flex between">
+                <article>
+                    <img src="image/items1.jpg" alt="img">
+                    <a href="#">MacBook Pro 13</a>
+                    <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet</p>
+                    <h4>$ 1,200.00 USD</h4>
+                </article>
+                <article>
+                    <img src="image/items2.jpg" alt="img">
+                    <a href="#">Smart Galaxy Watch 3</a>
+                    <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <h4>$ 199.00 USD</h4>
+                </article>
+            </div>
+            <div class="box d-flex between">
+                <article>
+                    <img src="image/items3.jpg" alt="img">
+                    <a href="#">MacBook Air M1</a>
+                    <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <h4>$ 1,009.00 USD</h4>
+                </article>
+                <article>
+                    <img src="image/items4.jpg" alt="img">
+                    <a href="#">iPad</a>
+                    <p>Neque porro quisquam est qui dolorem<br> ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <h4>$ 610.00 USD</h4>
+                </article>
+            </div>
         </div>
     </div>
 </section>
@@ -186,7 +209,6 @@
                 <div class="box_img">
                     <img src="image/best2.png" alt="img">
                 </div>
-
             </div>
             <div class="box text_centre">
                 <p>Smart light bulb pack</p>
@@ -219,7 +241,8 @@
         <a href="#">See all</a>
     </div>
 </section>
-<section class="else">
+
+<section id="search_else" class="else">
     <div class="container text_centre">
         <h3>Looking for anything else?</h3>
         <form action="#" method="post" class="form_search">
@@ -230,29 +253,141 @@
             </div>
         </form>
         <div class="search_box">
-            <a href="#">iPhone</a>
-            <a href="#">Charger</a>
-            <a href="#">Gift</a>
-            <a href="#">Google Pixel 3</a>
-            <a href="#">Keyboard</a>
+            <ul class="d-flex">
+                <li>
+                    <a href="#">iPhone</a>
+                </li>
+                <li>
+                    <a href="#">Charger</a>
+                </li>
+                <li>
+                    <a href="#">Gift</a>
+                </li>
+                <li>
+                    <a href="#">Google Pixel 3</a>
+                </li>
+                <li>
+                    <a href="#">Keyboard</a>
+                </li>
+            </ul>
+            <ul class="d-flex">
+                <li>
+                    <a href="#">13 Pro Max</a>
+                </li>
+                <li>
+                    <a href="#">iPhone 12</a>
+                </li>
+                <li>
+                    <a href="#">Laptop</a>
+                </li>
+                <li>
+                    <a href="#">Mobile</a>
+                </li>
+            </ul>
         </div>
-        <div class="search_box">
-            <a href="#">13 Pro Max</a>
-            <a href="#">iPhone 12</a>
-            <a href="#">Laptop</a>
-            <a href="#">Mobile</a>
+        <div class="else_box text_centre">
+            <h3>Never miss a thing</h3>
+            <p>Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+            <div class="box_img">
+                <img src="image/else.png" alt="img">
+            </div>
+            <form action="#" method="post" class="form_email d-flex">
+                <div class="email_box">
+                    <label for="email"></label>
+                    <input id="email" type="email" name="email" placeholder="Your email">
+                </div>
+                <div class="button_box text_centre">
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
         </div>
     </div>
-    <div class="else_box text_centre">
-        <h3>Never miss a thing</h3>
-        <p>Sign up for texts to be notified about our best offers on the perfect gifts.</p>
-        <img src="" alt="">
-        <form action=""></form>
-
-    </div>
-
-
 </section>
+
+<footer>
+    <div class="container d-flex">
+        <div class="logo">
+            <a href="#">
+                <img src="image/header_logo.svg" alt="logo">
+            </a>
+            <p>Sign up for texts to be notified about<br> our best offers on the perfect gifts.</p>
+        </div>
+        <div class="footer_box">
+            <h4>All products</h4>
+            <ul>
+                <li>
+                    <a href="#">Phones</a>
+                </li>
+                <li>
+                    <a href="#">Watch</a>
+                </li>
+                <li>
+                    <a href="#">Tablet</a>
+                </li>
+                <li>
+                    <a href="#">Laptops</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <h4>Company</h4>
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <h4>Support</h4>
+            <ul>
+                <li>
+                    <a href="#">Style Guide</a>
+                </li>
+                <li>
+                    <a href="#">Licensing</a>
+                </li>
+                <li>
+                    <a href="#">Change Log</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <h4>Follow Us</h4>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="visit_cart">
+        <div class="container d-flex between">
+            <div class="cart d-flex">
+                <p>Made By:</p>
+                <a href="#">Azwedo</a>
+            </div>
+            <div class="cart d-flex">
+                <p>Powered by:</p>
+                <a href="#">Webflow</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <script src="https://kit.fontawesome.com/9bb7cecad3.js" crossorigin="anonymous"></script>
